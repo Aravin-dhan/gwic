@@ -4,257 +4,306 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GWIC - GNLU Wellness Initiative Cell</title>
-    <meta name="description" content="GNLU Wellness Initiative Cell - Mental health support and wellness resources for students">
+    <meta name="description" content="GNLU Wellness Initiative Cell - Professional mental health support and wellness resources for students">
+    <meta name="theme-color" content="#065fa7">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <div class="logo-circle">
-                    <i class="fas fa-brain"></i>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-container">
+                <a href="index.html" class="nav-logo" aria-label="GWIC Home">
+                    <div class="logo-circle">
+                        <i class="fas fa-brain" aria-hidden="true"></i>
+                    </div>
+                    <span class="logo-text">GWIC</span>
+                </a>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="index.html" class="nav-link active" role="menuitem">Home</a></li>
+                    <li role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="team.html" class="nav-link" role="menuitem">Team</a></li>
+                    <li role="none"><a href="events.html" class="nav-link" role="menuitem">Events</a></li>
+                    <li role="none"><a href="resources.html" class="nav-link" role="menuitem">Resources</a></li>
+                    <li role="none"><a href="research.html" class="nav-link" role="menuitem">Research</a></li>
+                    <li role="none"><a href="blog.html" class="nav-link" role="menuitem">Blog</a></li>
+                    <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </button>
+                    
+                    <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <span class="bar" aria-hidden="true"></span>
+                        <span class="bar" aria-hidden="true"></span>
+                        <span class="bar" aria-hidden="true"></span>
+                    </button>
                 </div>
-                <span class="logo-text">GWIC</span>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
-                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
-                <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
-                <li class="nav-item"><a href="research.html" class="nav-link">Research</a></li>
-                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="instagram.html" class="nav-link">Instagram</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-container">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-container">
                 <div class="hero-content">
                     <div class="hero-badge">
-                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart" aria-hidden="true"></i>
                         <span>Mental Wellness at GNLU</span>
                     </div>
-                    <h1 class="hero-title">
+                    
+                    <h1 id="hero-title" class="hero-title">
                         Nurturing Minds,
-                        <span class="gradient-text">Building Futures</span>
+                        <span class="highlight">Building Futures</span>
                     </h1>
+                    
                     <p class="hero-description">
                         GWIC creates a sustainable culture of holistic wellness for GNLU students through 
                         community-driven approaches, open dialogue, and comprehensive mental health support.
                     </p>
+                    
                     <div class="hero-buttons">
                         <a href="mailto:gwic@gnlu.ac.in" class="btn btn-primary">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                             Email Us Now
                         </a>
                         <a href="about.html" class="btn btn-secondary">
-                            <i class="fas fa-arrow-right"></i>
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
                             Learn More
                         </a>
                     </div>
                 </div>
+                
                 <div class="hero-visual">
-                    <div class="hero-graphic">
-                        <i class="fas fa-brain"></i>
+                    <div class="hero-graphic" role="img" aria-label="Mental health support illustration">
+                        <i class="fas fa-brain" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Quick Access Section -->
-        <section class="quick-access">
+        <section class="quick-access" aria-labelledby="quick-access-title">
             <div class="container">
-                <div class="section-header">
+                <header class="section-header">
                     <span class="section-badge">Quick Support</span>
-                    <h2>Get Help Immediately</h2>
+                    <h2 id="quick-access-title">Get Help Immediately</h2>
                     <p>Access mental health resources and support when you need it most</p>
-                </div>
+                </header>
                 
                 <div class="cards-grid">
-                    <div class="glass-card" data-animation="fadeInUp">
+                    <article class="card">
                         <div class="card-icon">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                         </div>
                         <h3>Email Support</h3>
                         <p>Reach out to our team directly for personalized assistance and guidance.</p>
                         <a href="mailto:gwic@gnlu.ac.in" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
                             gwic@gnlu.ac.in
                         </a>
-                    </div>
+                    </article>
                     
-                    <div class="glass-card" data-animation="fadeInUp">
+                    <article class="card">
                         <div class="card-icon">
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone" aria-hidden="true"></i>
                         </div>
                         <h3>Crisis Helpline</h3>
                         <p>24/7 mental health crisis support and emergency counseling services.</p>
                         <a href="tel:+91-9152987821" class="btn btn-primary">
-                            <i class="fas fa-phone-alt"></i>
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
                             Emergency Support
                         </a>
-                    </div>
+                    </article>
                     
-                    <div class="glass-card" data-animation="fadeInUp">
+                    <article class="card">
                         <div class="card-icon">
-                            <i class="fas fa-calendar-alt"></i>
+                            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
                         </div>
                         <h3>Book Session</h3>
                         <p>Schedule one-on-one counseling sessions with our trained professionals.</p>
                         <a href="contact.html" class="btn btn-primary">
-                            <i class="fas fa-calendar-plus"></i>
+                            <i class="fas fa-calendar-plus" aria-hidden="true"></i>
                             Schedule Now
                         </a>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Services Section -->
-        <section class="services">
+        <section class="services" aria-labelledby="services-title">
             <div class="container">
-                <div class="section-header">
+                <header class="section-header">
                     <span class="section-badge">Our Services</span>
-                    <h2>Comprehensive Wellness Support</h2>
+                    <h2 id="services-title">Comprehensive Wellness Support</h2>
                     <p>Holistic mental health services designed for the GNLU community</p>
-                </div>
+                </header>
                 
                 <div class="cards-grid">
-                    <div class="card" data-animation="fadeInLeft">
+                    <article class="card">
                         <div class="card-icon">
-                            <i class="fas fa-user-md"></i>
+                            <i class="fas fa-user-md" aria-hidden="true"></i>
                         </div>
                         <h3>Individual Counseling</h3>
                         <p>Personalized therapy sessions with experienced mental health professionals to address your unique challenges and goals.</p>
-                    </div>
+                    </article>
                     
-                    <div class="card" data-animation="fadeInUp">
+                    <article class="card">
                         <div class="card-icon">
-                            <i class="fas fa-users"></i>
+                            <i class="fas fa-users" aria-hidden="true"></i>
                         </div>
                         <h3>Group Therapy</h3>
                         <p>Supportive group sessions where students can share experiences and learn from peers in a safe environment.</p>
-                    </div>
+                    </article>
                     
-                    <div class="card" data-animation="fadeInRight">
+                    <article class="card">
                         <div class="card-icon">
-                            <i class="fas fa-meditation"></i>
+                            <i class="fas fa-meditation" aria-hidden="true"></i>
                         </div>
                         <h3>Mindfulness Programs</h3>
                         <p>Meditation, yoga, and mindfulness workshops to help develop stress management and emotional regulation skills.</p>
-                    </div>
+                    </article>
                     
-                    <div class="card" data-animation="fadeInLeft">
+                    <article class="card">
                         <div class="card-icon">
-                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                         </div>
                         <h3>Academic Support</h3>
                         <p>Specialized counseling for academic stress, study strategies, and maintaining work-life balance.</p>
-                    </div>
+                    </article>
                     
-                    <div class="card" data-animation="fadeInUp">
+                    <article class="card">
                         <div class="card-icon">
-                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-heart" aria-hidden="true"></i>
                         </div>
                         <h3>Peer Support Network</h3>
                         <p>Connect with trained peer supporters who understand the unique challenges of law school life.</p>
-                    </div>
+                    </article>
                     
-                    <div class="card" data-animation="fadeInRight">
+                    <article class="card">
                         <div class="card-icon">
-                            <i class="fas fa-shield-alt"></i>
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
                         </div>
                         <h3>Crisis Intervention</h3>
                         <p>Immediate support and intervention services for students experiencing mental health emergencies.</p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Features Section -->
-        <section class="features">
+        <section class="features" aria-labelledby="features-title">
             <div class="container">
-                <div class="section-header">
+                <header class="section-header">
                     <span class="section-badge">Why Choose GWIC</span>
-                    <h2>Student-Centered Approach</h2>
+                    <h2 id="features-title">Student-Centered Approach</h2>
                     <p>Our unique methodology puts student wellness at the heart of everything we do</p>
-                </div>
+                </header>
                 
                 <div class="cards-grid">
-                    <div class="glass-card" data-animation="scaleIn">
+                    <article class="card">
                         <div class="card-icon">
-                            <i class="fas fa-lock"></i>
+                            <i class="fas fa-lock" aria-hidden="true"></i>
                         </div>
                         <h3>Confidential & Safe</h3>
                         <p>All interactions are completely confidential with strict privacy protocols to ensure your comfort and safety.</p>
-                    </div>
+                    </article>
                     
-                    <div class="glass-card" data-animation="scaleIn">
+                    <article class="card">
                         <div class="card-icon">
-                            <i class="fas fa-clock"></i>
+                            <i class="fas fa-clock" aria-hidden="true"></i>
                         </div>
                         <h3>Flexible Scheduling</h3>
                         <p>Services available around your academic schedule with both in-person and virtual options.</p>
-                    </div>
+                    </article>
                     
-                    <div class="glass-card" data-animation="scaleIn">
+                    <article class="card">
                         <div class="card-icon">
-                            <i class="fas fa-certificate"></i>
+                            <i class="fas fa-certificate" aria-hidden="true"></i>
                         </div>
                         <h3>Professional Excellence</h3>
                         <p>Trained and certified mental health professionals with expertise in student wellness.</p>
-                    </div>
+                    </article>
                     
-                    <div class="glass-card" data-animation="scaleIn">
+                    <article class="card">
                         <div class="card-icon">
-                            <i class="fas fa-hands-helping"></i>
+                            <i class="fas fa-hands-helping" aria-hidden="true"></i>
                         </div>
                         <h3>Holistic Care</h3>
                         <p>Comprehensive approach addressing mental, emotional, and academic wellness needs.</p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Call to Action -->
-        <section class="cta">
+        <!-- Canva Integration Example -->
+        <section class="canva-section" aria-labelledby="canva-title">
             <div class="container">
-                <div class="glass-card cta-card">
+                <header class="section-header">
+                    <span class="section-badge">Visual Resources</span>
+                    <h2 id="canva-title">Interactive Content</h2>
+                    <p>Explore our professionally designed wellness materials</p>
+                </header>
+                
+                <div class="canva-embed">
+                    <!-- Canva Embed Example -->
+                    <iframe src="https://www.canva.com/design/DAGBexample/view?embed" 
+                            loading="lazy"
+                            title="GWIC Wellness Infographic">
+                        <p>Your browser does not support iframes. 
+                           <a href="https://www.canva.com/design/DAGBexample/view" target="_blank" rel="noopener">
+                               View our wellness infographic here
+                           </a>
+                        </p>
+                    </iframe>
+                </div>
+                
+                <details class="canva-integration-guide">
+                    <summary>How to Integrate Your Canva Designs</summary>
+                    <div class="integration-content">
+                        <h4>Option 1: Direct Embed (Recommended)</h4>
+                        <p>Use Canva's share button → Embed → Copy the iframe code</p>
+                        <code>&lt;iframe src="your-canva-embed-url"&gt;&lt;/iframe&gt;</code>
+                        
+                        <h4>Option 2: Image Export</h4>
+                        <p>Export as PNG/JPG and use as regular images with faster loading</p>
+                        <code>&lt;img src="canva-export.png" alt="description"&gt;</code>
+                        
+                        <h4>Option 3: PDF Embed</h4>
+                        <p>For documents and reports, embed PDF versions</p>
+                        <code>&lt;embed src="canva-document.pdf" type="application/pdf"&gt;</code>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta" aria-labelledby="cta-title">
+            <div class="container">
+                <article class="card cta-card">
                     <div class="cta-content">
-                        <h2>Ready to Prioritize Your Wellness?</h2>
+                        <h2 id="cta-title">Ready to Prioritize Your Wellness?</h2>
                         <p>Take the first step towards better mental health and academic success. Our team is here to support you every step of the way.</p>
                         <div class="cta-buttons">
                             <a href="mailto:gwic@gnlu.ac.in" class="btn btn-primary">
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                                 Get Started Today
                             </a>
                             <a href="resources.html" class="btn btn-secondary">
-                                <i class="fas fa-book-open"></i>
+                                <i class="fas fa-book-open" aria-hidden="true"></i>
                                 Browse Resources
                             </a>
                         </div>
                     </div>
-                    <div class="cta-visual">
-                        <div class="cta-graphic">
-                            <i class="fas fa-heart-pulse"></i>
-                        </div>
-                    </div>
-                </div>
+                </article>
             </div>
         </section>
     </main>
@@ -266,7 +315,7 @@
                 <div class="footer-section">
                     <div class="footer-logo">
                         <div class="logo-circle">
-                            <i class="fas fa-brain"></i>
+                            <i class="fas fa-brain" aria-hidden="true"></i>
                         </div>
                         <span>GWIC</span>
                     </div>
@@ -306,7 +355,7 @@
             
             <div class="footer-bottom">
                 <p>&copy; 2024 GWIC - Gujarat National Law University. All rights reserved.</p>
-                <p>Made with <i class="fas fa-heart"></i> for student wellness</p>
+                <p>Made with <i class="fas fa-heart" aria-hidden="true"></i> for student wellness</p>
             </div>
         </div>
     </footer>
